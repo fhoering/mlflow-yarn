@@ -1,2 +1,4 @@
+cluster-pack@git+https://github.com/criteo/cluster-pack.git
+skein
 numpy
 mlflow

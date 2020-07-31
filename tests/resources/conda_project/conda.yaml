@@ -6,5 +6,7 @@ channels:
 dependencies:
   - python=3.6
   - pip:
+    - cluster-pack@git+https://github.com/criteo/cluster-pack.git
+    - skein
     - numpy
     - mlflow
