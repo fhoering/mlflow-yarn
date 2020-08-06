@@ -20,13 +20,13 @@ def _read_reqs(relpath):
 
 
 REQUIREMENTS = _read_reqs("requirements.txt")
+TESTS_REQUIREMENTS = _read_reqs("tests-requirements.txt")
 
 CLASSIFIERS = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "Intended Audience :: Science/Research",
-    "Operating System :: POSIX :: Linux",
-    "Environment :: Console",
+    "Operating System :: OS Independent",
     "License :: OSI Approved :: Apache Software License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.6",
@@ -40,7 +40,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     version=versioneer.get_version(),
     install_requires=REQUIREMENTS,
-    tests_require=["pytest"],
+    tests_require=TESTS_REQUIREMENTS,
     python_requires=">=3.6",
     maintainer="Criteo",
     maintainer_email="github@criteo.com",
