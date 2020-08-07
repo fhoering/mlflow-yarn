@@ -4,7 +4,7 @@ import versioneer
 
 here = os.path.abspath(os.path.dirname(__file__))
 
-DESCRIPTION = ("")
+DESCRIPTION = "Backend implementation for running MLFlow projects on Hadoop/YARN"
 
 try:
     LONG_DESCRIPTION = open(os.path.join(here, "README.md"), encoding="utf-8").read()
